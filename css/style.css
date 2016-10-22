@@ -1,0 +1,77 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+ .brand-logo {
+   font-size: 3em;
+   position: inherit;
+ }
+
+  #logo-container .nav-wrapper.container .grey-text.text-darken-3.lighten-3{
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .brand-logo #download-button{
+    font-family: 'Montserrat Alternates', sans-serif;
+  }
+
+  @media only screen and (max-width : 992px) {
+    .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+  }
+
+  @media only screen and (max-width : 600px) {
+    #index-banner .section {
+    top: 0;
+  }
+  }
+
+  .icon-block {
+    padding: 0 15px;
+  }
+
+  .icon-block .material-icons {
+	  font-size: inherit;
+  }
+
+  .parallax-container {
+    min-width: 0;
+  }
+
+  .parallax{
+    width: auto;
+    display: block;
+  }
+
+  .material-icons {
+    font-size: 45px;
+  }
+
+ footer {
+   margin-top: 0;
+   font-family: 'Montserrat', sans-serif;
+  }
+
+  .col-title h5 {
+    margin: auto;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    /*float: left;*/
+  }
+
+  .card-block {
+    margin: auto;
+    padding: 30px;
+    font-family: 'Montserrat', sans-serif;
+  }
