@@ -11,16 +11,16 @@
    position: inherit;
  }
 
+ .brand-logo #download-button{
+   font-family: 'Montserrat Alternates', sans-serif;
+ }
+
   #logo-container .nav-wrapper.container .grey-text.text-darken-3.lighten-3{
     font-family: 'Montserrat', sans-serif;
   }
 
-  .brand-logo #download-button{
-    font-family: 'Montserrat Alternates', sans-serif;
-  }
-
   @media only screen and (max-width : 992px) {
-    .parallax-container .section {
+  .parallax-container .section {
     position: absolute;
     top: 40%;
   }
@@ -30,7 +30,7 @@
   }
 
   @media only screen and (max-width : 600px) {
-    #index-banner .section {
+  #index-banner .section {
     top: 0;
   }
   }
@@ -56,7 +56,7 @@
     font-size: 45px;
   }
 
- footer {
+  footer {
    margin-top: 0;
    font-family: 'Montserrat', sans-serif;
   }
@@ -70,8 +70,9 @@
     /*float: left;*/
   }
 
-  .card-block {
+  .row {
     margin: auto;
-    padding: 30px;
+    padding: auto;
     font-family: 'Montserrat', sans-serif;
+
   }
