@@ -23,7 +23,7 @@
 </head>
 
 <body>
-  <div class="container">
+
   <nav class="dark-red" role="navigation">
 
     <div class="nav-wrapper container">
@@ -33,50 +33,50 @@
         <li><a href="order.html">Order Delivery</a></li>
       </ul>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Delivery</a></li>
-        <li><a href="order.html">Order</a></li>
+      <ul class="side-nav">
+        <li><a href="order.html">Order Delivery</a></li>
       </ul>
 
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div> <!--end of nav wrapper-->
   </nav>
   <main>
+    <div class="container">
     <div class="row"><!--Menu and Order row-->
-      <div class="col s6">Menu</div>
-      <div class="col s6">Order</div>
+      <div class="col s6"><h4 class="titleMenuOrder">Menu</h4></div>
+      <div class="col s6"><h4 class="titleMenuOrder">Order</h4></div>
     </div>
     <div class="row"><!--two sides container-->
       <div class="col s6"><!--photos side-->
         <div class="column">
           <div class="row">
-        <div class="col s6">
+        <div class="col s6"><!--pizza-->
           <div class="card">
             <div class="card-image">
-              <img src="images/sample-1.jpg">
-              <span class="card-title">Card Title</span>
+              <img src="img/pizza.jpg"/>
             </div>
             <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
+              <p>ARUGULE PIE</p>
+              <p>$11.99</p>
+              <br>
             </div>
             <div class="card-action">
-              <a href="#">This is a link</a>
+              <a href="#">ADD TO ORDER</a>
             </div>
           </div>
         </div>
-        <div class="col s6">
+        <div class="col s6"><!--burger-------->
           <div class="card">
             <div class="card-image">
-              <img src="images/sample-1.jpg">
-              <span class="card-title">Card Title</span>
+              <img src="img/burger.jpg"/>
             </div>
             <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
+              <p>ROYALE WITH CHEESE</p>
+              <p>$8.99</p>
+              <br>
             </div>
             <div class="card-action">
-              <a href="#">This is a link</a>
+              <a href="#">ADD TO ORDER</a>
             </div>
           </div>
         </div>
@@ -84,49 +84,110 @@
       </div>
       <div class="column">
         <div class="row">
-          <div class="col s6">
+          <div class="col s6"><!---ribs---------->
             <div class="card">
               <div class="card-image">
-                <img src="images/sample-1.jpg">
-                <span class="card-title">Card Title</span>
+                <img src="img/ribs.jpg"/>
               </div>
               <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
+                <p>SMOKED SWINE</p>
+                <p>$14.99</p>
+                <br>
               </div>
               <div class="card-action">
-                <a href="#">This is a link</a>
+                <a href="#">ADD TO ORDER</a>
               </div>
             </div>
           </div>
-        <div class="col s6">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/sample-1.jpg">
-              <span class="card-title">Card Title</span>
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
+          <div class="col s6"><!--ice-cream-------->
+            <div class="card">
+              <div class="card-image">
+                <img src="img/ice_cream.jpg"/>
+              </div>
+              <div class="card-content">
+                <p>ICE CREAM BISCUT</p>
+                <p>$7.99</p>
+                <br>
+              </div>
+              <div class="card-action">
+                <a href="#">ADD TO ORDER</a>
+              </div>
             </div>
           </div>
-        </div>
       </div>
+      </div>
+    </div>                                <!--end of photo side-->
+  <div class="col s6"><!--right side-->
+  <div class="column">
+    <div class="row">
+      <table class="striped">
+        <thead>
+          <tr>
+              <th data-field="item">Item</th>
+              <th data-field="price">Price</th>
+          </tr>
+        </thead>
 
+        <tbody>
+          <tr>
+            <td>Arugula Pie</td>
+            <td>$11.99</td>
+          </tr>
+          <tr>
+            <td>Royale with Cheese</td>
+            <td>$8.99</td>
+          </tr>
+          <tr>
+            <td>Smoked Swine</td>
+            <td>$14.99</td>
+          </tr>
+          <tr>
+            <td>Ice Cream Biscut</td>
+            <td>$7.99</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="col s6 offset-s6">
+        <table class="bordered">
+      <tbody>              <!--item price table----->
+          <tr><td><b>Subtotal</b></td></tr>
+          <tr><td><b>Tax</b></td></tr>
+          <tr><td><b>Total</b></td></tr>
+          <tr> </tr>
+          <tr> </tr>
+          <tr> </tr>
+      </tbody>
+    </table>             <!--/.item price table-->
       </div>
-    </div><!--end of photo side-->
-      <div class="col s6"><!--order side-->
-        <div class="column blue">m
-          <div class="row red">q
-          </div>
-          <div class="row green">p
-          </div>
-      </div>
-    </div><!--end of order side-->
-    </div><!--end of two sides-->
+      <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="name" type="text" class="validate">
+                <label for="name">Name</label>
+              </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="phoneNumber" type="text" class="validate">
+                  <label for="phoneNumber">Phone Number</label>
+                </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="address" type="text" class="validate">
+                    <label for="address">Address</label>
+                  </div>
+                  </div>
+          </form>
+        </div>
+        <div class="bn col s6 offset-s6">
+          <a class="waves-effect waves-light btn">Place Order</a>
+        </div>
+    </div>
+    </div>
+  </div>
+</div><!--end of two sides-->
   </main>
 
   <footer class="page-footer teal orange">
