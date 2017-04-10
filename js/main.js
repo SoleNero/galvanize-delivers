@@ -29,12 +29,13 @@ $('.place-order').on('click', function(event){
 });
 
 
-$("#contact").on('click', function(e){
+$("#contact").on('click', function(event){
   contact = [];
   contact.push($('#name').val());
   contact.push($('#phoneNumber').val());
   contact.push($('#address').val());
   validate(contact);
+  console.log(contact);
 })
 
 function updateOrder(item) {
@@ -57,19 +58,19 @@ function updateOrder(item) {
   $(total.text(`$ ${totalVal}`));
 }
 
-function validate(text_field){
+function validate(textField){
   if(order.children().length >0){
-    for (var i=0; i< text_field.length; i++){
-      if(!text_field[i]){
+    for (var i=0; i< textField.length; i++){
+      if(!textField[i]){
         Materialize.toast("All contact info must be filled out.")
         return;
       }
     }
   }else{
-    Materialize.toast('Card is empty')
+    Materialize.toast('Card is empty', 1000)
     return;
   }
-  Materialize.toast('Your order have been sent')
+  Materialize.toast('Your order has been sent', 1000)
 }
 
 });
