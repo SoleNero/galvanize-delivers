@@ -11,55 +11,12 @@ html{
 
  .brand-logo {
    font-size: 22px;
-   /*position: inherit;*/
  }
 
- .brand-logo #download-button #title_order{
-   font-family: 'Montserrat Alternates', sans-serif;
- }
-
-  @media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }}
-
-
-  @media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }}
-
-  .icon-block {
-    padding: 0 15px;
-  }
-
-  .icon-block .material-icons {
-	  font-size: inherit;
-  }
-
-  .parallax-container {
-    min-width: 0;
-  }
-
-  .parallax{
-    width: auto;
-    display: block;
-  }
-
-  .material-icons {
+ .material-icons {
     font-size: 45px;
   }
 
   footer.page-footer {
    margin-top: 0;
   }
-
- .titleMenuOrder{
-   text-align: center;
-   font-family: 'Montserrat Alternates', sans-serif;
-   font-size: 18px;
- }

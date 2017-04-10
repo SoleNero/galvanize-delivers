@@ -1,187 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
 
   <title>Order</title>
 
   <!-- CSS Materialize -->
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates" rel="stylesheet">
 
   <!-- JS  -->
-  <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/main.js" charset="utf-8"></script>
 </head>
 
 <body>
 
-  <nav class="dark-red" role="navigation">
+  <nav class="dark-red">
 
     <div class="nav-wrapper container">
-      <a id="logo-container" href="index.html" class="brand-logo">Galvanize Delivers</a>
-
-      <ul class="right hide-on-med-and-down">
+      <a href="index.html" class="brand-logo">Galvanize Delivers</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li class="active"><a href="order.html">Order Delivery</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="index.html">Home</a></li>
         <li><a href="order.html">Order Delivery</a></li>
       </ul>
-
-      <ul class="side-nav">
-        <li><a href="order.html">Order Delivery</a></li>
-      </ul>
-
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div> <!--end of nav wrapper-->
-  </nav>
-  <main>
-    <div class="container">
-    <div class="row"><!--Menu and Order row-->
-      <div class="col s6"><h4 class="titleMenuOrder">Menu</h4></div>
-      <div class="col s6"><h4 class="titleMenuOrder">Order</h4></div>
     </div>
-    <div class="row"><!--two sides container-->
-      <div class="col s6"><!--photos side-->
-        <div class="column">
-          <div class="row">
-        <div class="col s6"><!--pizza-->
-          <div class="card">
-            <div class="card-image">
-              <img src="img/pizza.jpg"/>
-            </div>
-            <div class="card-content">
-              <p>ARUGULE PIE</p>
-              <p>$11.99</p>
-              <br>
-            </div>
-            <div class="card-action">
-              <button name="Arugula Pie" id="pizza" class="place-order sm btn" type="submit">ADD TO ORDER</button>
-            </div>
-          </div>
-        </div>
-        <div class="col s6"><!--burger-->
-          <div class="card">
-            <div class="card-image">
-              <img src="img/burger.jpg"/>
-            </div>  
-            <div class="card-content">
-              <p>ROYALE WITH CHEESE</p>
-              <p>$8.99</p>
-              <br>
-            </div>
-            <div class="card-action">
-              <button name="Royale with Cheese" id="burger" class="place-order sm btn" type="submit">ADD TO ORDER</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-      <div class="column">
-        <div class="row">
-          <div class="col s6"><!---ribs-->
-            <div class="card">
-              <div class="card-image">
-                <img src="img/ribs.jpg"/>
-              </div>
-              <div class="card-content">
-                <p>SMOKED SWINE</p>
-                <p>$14.99</p>
-                <br>
-              </div>
-              <div class="card-action">
-                <button name="Smoked Swine" id="ribs" class="place-order sm btn" type="submit">ADD TO ORDER</button>
-              </div>
-            </div>
-          </div>
-          <div class="col s6"><!--ice-cream-->
-            <div class="card">
-              <div class="card-image">
-                <img src="img/ice_cream.jpg"/>
-              </div>
-              <div class="card-content">
-                <p>ICE CREAM BISCUT</p>
-                <p>$7.99</p>
-                <br>
-              </div>
-              <div class="card-action">
-                <button name="Ice Cream Biscut" id="iceCream" class="place-order sm btn" type="submit">ADD TO ORDER</button>
-              </div>
-            </div>
-          </div>
-      </div>
-      </div>
-    </div>                                <!--end of photo side-->
-
-  <div class="col s6"><!--right side-->
-  <div class="column">
+    <!--end of nav wrapper-->
+  </nav>
+  <div class="container">
     <div class="row">
-      <table class="striped">
-        <thead>
-          <tr>
-              <th data-field="item">Item</th>
-              <th data-field="price">Price</th>
-          </tr>
-        </thead>
-<!-- order input -->
-        <tbody id="order" class="striped">
-        </tbody>
-      </table>
-      <div class="col s6 offset-s6">
-        <table class="bordered">
-      <tbody>              <!--item price table-->
-          <tr>
-            <td><b>Subtotal</b></td>
-            <td id="subtotal"></td>
-          </tr>
-          <tr>
-            <td><b>Tax</b></td>
-            <td id="tax"></td>
-          </tr>
-          <tr>
-            <td><b>Total</b></td>
-            <td id="total"></td>
-          </tr>
+      <!--Menu and Order row-->
+      <div class="col s12 m7 l7">
+        <h4 class="titleMenuOrder">Menu</h4>
+            <div class="col s12 l6">
+                  <!--pizza-->
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="img/pizza.jpg" />
+                    </div>
+                    <div class="card-content">
+                      <p>ARUGULE PIE</p>
+                      <p>$11.99</p>
+                      <br>
+                    </div>
+                    <div class="card-action">
+                      <button name="Arugula Pie" id="pizza" class="place-order sm btn" type="submit">ADD TO ORDER</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 l6">
+                  <!--burger-->
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="img/burger.jpg" />
+                    </div>
+                    <div class="card-content">
+                      <p>ROYALE WITH CHEESE</p>
+                      <p>$8.99</p>
+                      <br>
+                    </div>
+                    <div class="card-action">
+                      <button name="Royale with Cheese" id="burger" class="place-order sm btn" type="submit">ADD TO ORDER</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 l6">
+                  <!---ribs-->
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="img/ribs.jpg" />
+                    </div>
+                    <div class="card-content">
+                      <p>SMOKED SWINE</p>
+                      <p>$14.99</p>
+                      <br>
+                    </div>
+                    <div class="card-action">
+                      <button name="Smoked Swine" id="ribs" class="place-order sm btn" type="submit">ADD TO ORDER</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 l6">
+                  <!--ice-cream-->
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="img/ice_cream.jpg" />
+                    </div>
+                    <div class="card-content">
+                      <p>ICE CREAM BISCUT</p>
+                      <p>$7.99</p>
+                      <br>
+                    </div>
+                    <div class="card-action">
+                      <button name="Ice Cream Biscut" id="iceCream" class="place-order sm btn" type="submit">ADD TO ORDER</button>
+                    </div>
+                  </div>
+                </div>
+                </div>
+        <!--end of photo side-->
 
-      </tbody>
-    </table>             <!--/.item price table-->
-      </div>
-      <div class="row">
-          <form class="col s12">
-            <div class="row">
-              <div class="input-field col s12">
-                <input id="name" type="text" class="validate">
-                <label for="name">Name</label>
-              </div>
+        <!--right side-->
+        <div class="col s12 m5 l5">
+          <h4 class="titleMenuOrder">Order</h4>
+          <table class="striped">
+            <thead>
+              <tr>
+                <th data-field="item">Item</th>
+                <th data-field="price">Price</th>
+              </tr>
+            </thead>
+            <!-- order input -->
+            <tbody id="order" class="striped">
+            </tbody>
+          </table>
+          <div class="col s6 offset-s6">
+            <table class="bordered">
+              <tbody>
+                <!--item price table-->
+                <tr>
+                  <td class="right-align"><b>Subtotal</b></td>
+                  <td id="subtotal" class="right-align"></td>
+                </tr>
+                <tr>
+                  <td class="right-align"><b>Tax</b></td>
+                  <td id="tax" class="right-align"></td>
+                </tr>
+                <tr>
+                  <td class="right-align"><b>Total</b></td>
+                  <td id="total" class="right-align"></td>
+                </tr>
+
+              </tbody>
+            </table>
+            <!--/.item price table-->
+          </div>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col l12">
+                  <input id="name" type="text" class="validate">
+                  <label for="name">Name</label>
+                </div>
               </div>
               <div class="row">
-                <div class="input-field col s12">
+                <div class="input-field col l12">
                   <input id="phoneNumber" type="text" class="validate">
                   <label for="phoneNumber">Phone Number</label>
                 </div>
+              </div>
+              <div class="row">
+                <div class="input-field col l12">
+                  <input id="address" type="text" class="validate">
+                  <label for="address">Address</label>
                 </div>
-                <div class="row">
-                  <div class="input-field col s12">
-                    <input id="address" type="text" class="validate">
-                    <label for="address">Address</label>
-                  </div>
-                  </div>
-          </form>
+              </div>
+            </form>
+          </div>
+          <div class="center-align">
+            <button id="contact" class="waves-effect waves-light btn" type="submit">Place Order</button>
+          </div>
         </div>
-        <div class="bn col s6 offset-s6">
-          <button id="contact" class="waves-effect waves-light btn" type="submit">Place Order</button>
-        </div>
-    </div>
-    </div>
   </div>
 </div>
-</div><!--end of two sides-->
-  </main>
+  <!--end of two sides-->
+
 
   <footer class="page-footer teal orange">
     <div class="container">
@@ -191,26 +187,27 @@
           <p class="grey-text text-lighten-4">Fine Dining, Delivered.</p>
 
 
-          </div>
-          <div class="col l3 s12">
-            <ul>
-              <li><a class="white-text" href="index.html">Home</a></li>
-              <li><a class="white-text" href="order.html">Order Delivery</a></li>
-            </ul>
-          </div>
+        </div>
+        <div class="col l3 s12">
+          <ul>
+            <li><a class="white-text" href="index.html">Home</a></li>
+            <li><a class="white-text" href="order.html">Order Delivery</a></li>
+          </ul>
         </div>
       </div>
-      <div class="footer-copyright">
-        <div class="container">
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
         @2016 Galvanize Delivers
-        </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
 
-    <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <!-- </div> -->
-  </body>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <!-- </div> -->
+</body>
+
 </html>
