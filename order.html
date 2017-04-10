@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 
-  <title>Galvanize Delivers main</title>
+  <title>Galvanize Delivers</title>
 
   <!-- CSS Materialize -->
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -61,22 +61,22 @@
               <br>
             </div>
             <div class="card-action">
-              <a href="#">ADD TO ORDER</a>
+              <button id="pizza" class="place-order sm btn" type="submit">ADD TO ORDER</button>
             </div>
           </div>
         </div>
-        <div class="col s6"><!--burger-------->
+        <div class="col s6"><!--burger-->
           <div class="card">
             <div class="card-image">
               <img src="img/burger.jpg"/>
-            </div>
+            </div>  
             <div class="card-content">
               <p>ROYALE WITH CHEESE</p>
               <p>$8.99</p>
               <br>
             </div>
             <div class="card-action">
-              <a href="#">ADD TO ORDER</a>
+              <button id="burger" class="place-order sm btn" type="submit">ADD TO ORDER</button>
             </div>
           </div>
         </div>
@@ -84,7 +84,7 @@
       </div>
       <div class="column">
         <div class="row">
-          <div class="col s6"><!---ribs---------->
+          <div class="col s6"><!---ribs-->
             <div class="card">
               <div class="card-image">
                 <img src="img/ribs.jpg"/>
@@ -95,11 +95,11 @@
                 <br>
               </div>
               <div class="card-action">
-                <a href="#">ADD TO ORDER</a>
+                <button id="ribs" class="place-order sm btn" type="submit">ADD TO ORDER</button>
               </div>
             </div>
           </div>
-          <div class="col s6"><!--ice-cream-------->
+          <div class="col s6"><!--ice-cream-->
             <div class="card">
               <div class="card-image">
                 <img src="img/ice_cream.jpg"/>
@@ -110,13 +110,14 @@
                 <br>
               </div>
               <div class="card-action">
-                <a href="#">ADD TO ORDER</a>
+                <button id="iceCream" class="place-order sm btn" type="submit">ADD TO ORDER</button>
               </div>
             </div>
           </div>
       </div>
       </div>
     </div>                                <!--end of photo side-->
+
   <div class="col s6"><!--right side-->
   <div class="column">
     <div class="row">
@@ -127,35 +128,28 @@
               <th data-field="price">Price</th>
           </tr>
         </thead>
-
-        <tbody>
-          <tr>
-            <td>Arugula Pie</td>
-            <td>$11.99</td>
-          </tr>
-          <tr>
-            <td>Royale with Cheese</td>
-            <td>$8.99</td>
-          </tr>
-          <tr>
-            <td>Smoked Swine</td>
-            <td>$14.99</td>
-          </tr>
-          <tr>
-            <td>Ice Cream Biscut</td>
-            <td>$7.99</td>
-          </tr>
+<!-- order input -->
+        <tbody id="orderInput">
+          <td id="itemOutput"></td>
+          <td id="priceOutput"></td>
         </tbody>
       </table>
       <div class="col s6 offset-s6">
         <table class="bordered">
-      <tbody>              <!--item price table----->
-          <tr><td><b>Subtotal</b></td></tr>
-          <tr><td><b>Tax</b></td></tr>
-          <tr><td><b>Total</b></td></tr>
-          <tr> </tr>
-          <tr> </tr>
-          <tr> </tr>
+      <tbody>              <!--item price table-->
+          <tr id="subtotal">
+            <td><b>Subtotal</b></td>
+            <td></td>
+          </tr>
+          <tr id="tax">
+            <td><b>Tax</b></td>
+            <td></td>
+          </tr>
+          <tr id="total">
+            <td><b>Total</b></td>
+            <td></td>
+          </tr>
+
       </tbody>
     </table>             <!--/.item price table-->
       </div>
@@ -182,11 +176,12 @@
           </form>
         </div>
         <div class="bn col s6 offset-s6">
-          <a class="waves-effect waves-light btn">Place Order</a>
+          <button id="placeOrder" class="waves-effect waves-light btn" type="submit">Place Order</button>
         </div>
     </div>
     </div>
   </div>
+</div>
 </div><!--end of two sides-->
   </main>
 
@@ -218,6 +213,6 @@
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
-    </div>
+    <!-- </div> -->
   </body>
 </html>
