@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 
-  <title>Galvanize Delivers</title>
+  <title>Order</title>
 
   <!-- CSS Materialize -->
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -61,7 +61,7 @@
               <br>
             </div>
             <div class="card-action">
-              <button id="pizza" class="place-order sm btn" type="submit">ADD TO ORDER</button>
+              <button name="Arugula Pie" id="pizza" class="place-order sm btn" type="submit">ADD TO ORDER</button>
             </div>
           </div>
         </div>
@@ -76,7 +76,7 @@
               <br>
             </div>
             <div class="card-action">
-              <button id="burger" class="place-order sm btn" type="submit">ADD TO ORDER</button>
+              <button name="Royale with Cheese" id="burger" class="place-order sm btn" type="submit">ADD TO ORDER</button>
             </div>
           </div>
         </div>
@@ -95,7 +95,7 @@
                 <br>
               </div>
               <div class="card-action">
-                <button id="ribs" class="place-order sm btn" type="submit">ADD TO ORDER</button>
+                <button name="Smoked Swine" id="ribs" class="place-order sm btn" type="submit">ADD TO ORDER</button>
               </div>
             </div>
           </div>
@@ -110,7 +110,7 @@
                 <br>
               </div>
               <div class="card-action">
-                <button id="iceCream" class="place-order sm btn" type="submit">ADD TO ORDER</button>
+                <button name="Ice Cream Biscut" id="iceCream" class="place-order sm btn" type="submit">ADD TO ORDER</button>
               </div>
             </div>
           </div>
@@ -129,25 +129,23 @@
           </tr>
         </thead>
 <!-- order input -->
-        <tbody id="orderInput">
-          <td id="itemOutput"></td>
-          <td id="priceOutput"></td>
+        <tbody id="order" class="striped">
         </tbody>
       </table>
       <div class="col s6 offset-s6">
         <table class="bordered">
       <tbody>              <!--item price table-->
-          <tr id="subtotal">
+          <tr>
             <td><b>Subtotal</b></td>
-            <td></td>
+            <td id="subtotal"></td>
           </tr>
-          <tr id="tax">
+          <tr>
             <td><b>Tax</b></td>
-            <td></td>
+            <td id="tax"></td>
           </tr>
-          <tr id="total">
+          <tr>
             <td><b>Total</b></td>
-            <td></td>
+            <td id="total"></td>
           </tr>
 
       </tbody>
